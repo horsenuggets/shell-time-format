@@ -1,0 +1,6 @@
+[submodule "Submodules/shelltest"]
+	path = Submodules/shelltest
+	url = git@github.com:horsenuggets/shelltest.git
+[submodule "Submodules/claude-md"]
+	path = Submodules/claude-md
+	url = git@github.com:horsenuggets/claude-md.git
