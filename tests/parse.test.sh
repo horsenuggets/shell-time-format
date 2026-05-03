@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 #
-# ParseTest.test.sh
+# parse.test.sh
 #
 # Verifies time_format_parse handles the wide range of accepted inputs and
 # correctly rejects malformed inputs.
 
 source "$SHELLTEST_LIB"
-source "$(dirname "$0")/../Source/ShellTimeFormat.sh"
+source "$(dirname "$0")/../src/shell-time-format.sh"
 
 describe "time_format_parse"
 

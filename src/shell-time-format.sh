@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# ShellTimeFormat.sh
+# shell-time-format.sh
 #
 # Library for parsing and formatting human-friendly duration strings. Source
 # this file to expose `time_format_parse`, `time_format_format`, and

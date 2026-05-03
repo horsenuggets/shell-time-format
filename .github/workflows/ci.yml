@@ -64,13 +64,13 @@ jobs:
 
       - name: Make scripts executable
         run: |
-          chmod +x ./Tests/*.test.sh
-          chmod +x ./Submodules/shelltest/Tools/*.sh
+          chmod +x ./tests/*.test.sh
+          chmod +x ./submodules/shelltest/tools/*.sh
 
       - name: Run tests
         env:
-          SHELLTEST_LIB: ${{ github.workspace }}/Submodules/shelltest/Source/ShellTest.sh
-        run: ./Submodules/shelltest/Tools/RunTests.sh Tests
+          SHELLTEST_LIB: ${{ github.workspace }}/submodules/shelltest/src/shelltest.sh
+        run: ./submodules/shelltest/tools/test.sh tests
 
   shellcheck:
     name: Static analysis (shellcheck)
@@ -83,7 +83,7 @@ jobs:
         uses: ludeeus/action-shellcheck@2.0.0
         with:
           severity: warning
-          ignore_paths: Submodules
+          ignore_paths: submodules
 
   changelog:
     name: Check changelog format
@@ -122,7 +122,7 @@ jobs:
               --include='*.yaml' \
               --include='*.json' \
               --include='*.md' \
-              --exclude-dir=Submodules \
+              --exclude-dir=submodules \
               --exclude-dir=.git \
               .; then
             echo "::error::Tab indentation is not allowed"

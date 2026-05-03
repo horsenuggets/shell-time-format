@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 #
-# NormalizeTest.test.sh
+# normalize.test.sh
 #
 # Verifies time_format_normalize round-trips messy input into canonical form.
 
 source "$SHELLTEST_LIB"
-source "$(dirname "$0")/../Source/ShellTimeFormat.sh"
+source "$(dirname "$0")/../src/shell-time-format.sh"
 
 describe "time_format_normalize"
 

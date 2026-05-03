@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 #
-# FormatTest.test.sh
+# format.test.sh
 #
 # Verifies time_format_format produces canonical human-readable strings.
 
 source "$SHELLTEST_LIB"
-source "$(dirname "$0")/../Source/ShellTimeFormat.sh"
+source "$(dirname "$0")/../src/shell-time-format.sh"
 
 describe "time_format_format"
 

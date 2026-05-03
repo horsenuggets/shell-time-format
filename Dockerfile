@@ -16,8 +16,8 @@ WORKDIR /shell-time-format
 
 COPY . .
 
-RUN chmod +x ./Tests/*.test.sh ./Submodules/shelltest/Tools/*.sh
+RUN chmod +x ./tests/*.test.sh ./submodules/shelltest/tools/*.sh
 
-ENV SHELLTEST_LIB=/shell-time-format/Submodules/shelltest/Source/ShellTest.sh
+ENV SHELLTEST_LIB=/shell-time-format/submodules/shelltest/src/shelltest.sh
 
-CMD ["./Submodules/shelltest/Tools/RunTests.sh", "Tests"]
+CMD ["./submodules/shelltest/tools/test.sh", "tests"]

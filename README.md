@@ -7,13 +7,13 @@ A bash library for parsing and formatting human-friendly duration strings. Toler
 Add `shell-time-format` as a submodule:
 
 ```bash
-git submodule add git@github.com:horsenuggets/shell-time-format.git Submodules/shell-time-format
+git submodule add git@github.com:horsenuggets/shell-time-format.git submodules/shell-time-format
 ```
 
 Source it from your script:
 
 ```bash
-source ./Submodules/shell-time-format/Source/ShellTimeFormat.sh
+source ./submodules/shell-time-format/src/shell-time-format.sh
 
 seconds=$(time_format_parse "1h 30m") || exit 1
 echo "$seconds"                          # 5400
