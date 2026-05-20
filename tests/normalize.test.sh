@@ -4,7 +4,9 @@
 #
 # Verifies time_format_normalize round-trips messy input into canonical form.
 
+# shellcheck source=/dev/null
 source "$SHELLTEST_LIB"
+# shellcheck source=/dev/null
 source "$(dirname "$0")/../src/shell-time-format.sh"
 
 describe "time_format_normalize"

@@ -5,7 +5,9 @@
 # Verifies time_format_parse handles the wide range of accepted inputs and
 # correctly rejects malformed inputs.
 
+# shellcheck source=/dev/null
 source "$SHELLTEST_LIB"
+# shellcheck source=/dev/null
 source "$(dirname "$0")/../src/shell-time-format.sh"
 
 describe "time_format_parse"
